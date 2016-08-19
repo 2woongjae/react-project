@@ -1,0 +1,10 @@
+.loading-area {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -80px;
+}
+.sk-fading-circle .sk-circle:before {
+  box-shadow: 0 0 6px #ccc;
+}

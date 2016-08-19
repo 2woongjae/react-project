@@ -1,0 +1,16 @@
+.content-title {
+  margin-top: 0;
+  border: 0;
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
+}
+.sub-header {
+  margin-left: 10px;
+}
+.content-title .btn-add {
+  margin-left: 20px;
+}
+textarea {
+  font-weight: normal;
+  border-radius: 6px;
+}

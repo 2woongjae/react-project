@@ -1,0 +1,249 @@
+.top-nav {
+  position: fixed;
+  min-height: 52px;
+  background-color: #161616;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1010;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease;
+}
+.top-nav .top-nav-inner {
+  position: relative;
+  border-top: 2px solid #2baab1;
+}
+.top-nav .top-nav-inner:before,
+.top-nav .top-nav-inner:after {
+  content: " ";
+  display: table;
+}
+.top-nav .top-nav-inner:after {
+  clear: both;
+}
+.top-nav .nav-header {
+  position: relative;
+  float: left;
+  width: 240px;
+  height: 52px;
+}
+.top-nav .nav-header .brand {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 60px;
+  padding: 0 10px;
+  color: #E0E0E0;
+  line-height: 52px;
+}
+.top-nav .nav-header .brand .brand-name {
+  margin-left: 5px;
+}
+@media (max-width: 991px) {
+  .top-nav .nav-header {
+    display: block !important;
+    width: 100%;
+    text-align: center;
+  }
+  .top-nav .nav-header .brand {
+    margin: 0;
+    background-color: #161616;
+    color: #848484;
+  }
+}
+@media (min-width: 992px) {
+  .top-nav .nav-header .navbar-toggle,
+  .top-nav .nav-header .nav-notification {
+    display: none;
+  }
+}
+.top-nav .nav-container {
+  margin-left: 240px;
+}
+.top-nav .nav-container:before,
+.top-nav .nav-container:after {
+  content: " ";
+  display: table;
+}
+.top-nav .nav-container:after {
+  clear: both;
+}
+@media (max-width: 991px) {
+  .top-nav .nav-container {
+    display: none;
+  }
+}
+.top-nav .navbar-toggle {
+  display: inline-block;
+  margin-top: 8px;
+}
+.top-nav .navbar-toggle .icon-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  background-color: #777;
+  border-radius: 1px;
+}
+.top-nav .navbar-toggle .icon-bar:last-child {
+  margin-bottom: 0;
+}
+.top-nav .user-block {
+  position: relative;
+  float: left;
+  display: block;
+  margin-right: 60px;
+  padding: 9px 0;
+  outline: none;
+}
+.top-nav .user-block .user-detail {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 13px;
+  line-height: 32px;
+  color: #848484;
+}
+.top-nav .user-block .user-detail .fa {
+  margin-left: 6px;
+}
+.top-nav .user-block .user-panel {
+  position: absolute;
+  min-width: 180px;
+  border: 1px solid #eee;
+  top: 48px;
+  left: -10px;
+  padding: 0;
+  animation: fadeInUp 1s ease;
+}
+.top-nav .user-block .user-panel .panel-body {
+  padding: 0;
+}
+.top-nav .user-block .user-panel ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.top-nav .user-block .user-panel ul li a {
+  display: block;
+  padding: 4px 20px;
+  color: #666666;
+  white-space: normal;
+  outline: none;
+  transition: all 0.2s ease;
+}
+.top-nav .user-block .user-panel ul li a:hover,
+.top-nav .user-block .user-panel ul li a:focus {
+  background: #f4f8fb;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.2s ease;
+}
+.top-nav .user-block .user-profile-pic {
+  width: 35px;
+  height: 35px;
+}
+.top-nav .nav-notification {
+  float: left;
+  list-style: none;
+}
+.top-nav .nav-notification > li {
+  position: relative;
+  float: left;
+}
+.top-nav .nav-notification > li > a {
+  display: block;
+  font-size: 13px;
+  padding: 17px;
+  color: #848484;
+  outline: none;
+}
+.top-nav .nav-notification > li > a:hover,
+.top-nav .nav-notification > li > a:focus {
+  background-color: #F4F8FB;
+}
+.top-nav .nav-notification > li > .badge {
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 3px 5px;
+  display: none;
+}
+.top-nav .nav-notification > li > .badge.active {
+  display: block;
+}
+.top-nav .nav-notification > li .dot-alert {
+  position: absolute;
+  top: 15px;
+  right: 11px;
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50em;
+}
+.top-nav .nav-notification > li .dropdown-menu {
+  animation: flipInV 0.5s ease;
+}
+.top-nav .nav-notification > li .dropdown-menu.dropdown-sm {
+  min-width: 250px;
+}
+.top-nav .nav-notification > li .dropdown-menu.dropdown-sm li.user-avatar {
+  padding: 10px 20px 30px;
+}
+.top-nav .nav-notification > li .dropdown-menu.dropdown-sm li.user-avatar img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+.top-nav .nav-notification > li .dropdown-menu.dropdown-sm li.user-avatar .user-content {
+  margin-left: 80px;
+}
+.top-nav .nav-notification > li .dropdown-menu.user-dropdown li a {
+  white-space: normal;
+}
+.top-nav .nav-notification > li .search-input-wrapper {
+  padding: 10px 0;
+}
+.top-nav .nav-notification > li .chat-alert {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  color: #fff;
+  min-width: 150px;
+  right: 10px;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0;
+  border-radius: 4px;
+  transition: opacity 0.5s ease;
+}
+.top-nav .nav-notification > li .chat-alert:before {
+  position: absolute;
+  top: -7px;
+  right: 9px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid rgba(0, 0, 0, 0.8);
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+.top-nav .nav-notification > li .chat-alert:after {
+  position: absolute;
+  top: -6px;
+  right: 10px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid rgba(0, 0, 0, 0.8);
+  border-left: 6px solid transparent;
+  content: '';
+}
+.top-nav .nav-notification > li .chat-alert.active {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}

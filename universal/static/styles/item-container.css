@@ -1,0 +1,13 @@
+.item-container {
+  position: relative;
+}
+.item-container .bunch {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  font-size: 22px;
+}
+.item-container .bunch select {
+  padding-left: 10px;
+  direction: rtl;
+}

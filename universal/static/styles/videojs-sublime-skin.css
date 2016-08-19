@@ -1,0 +1,28 @@
+.video-js.vjs-sublime-skin .vjs-big-play-button {
+line-height: 50px;
+margin: -25px;
+opacity: 1;
+position: absolute;
+top: 50%;
+left: 50%;
+height: 50px;
+width: 50px;
+transition: opacity 100ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+border-radius: 50em;
+z-index: 2;
+}
+.video-js.vjs-sublime-skin .vjs-big-play-button:before {
+  border-color: transparent transparent transparent white;
+  border-style: solid;
+  border-width: 14px 0 14px 18px;
+  content: "";
+  display: block;
+  top: 8px;
+  left: 16px;
+  width: 41%;
+  height: 64%;
+}
+.video-js.vjs-sublime-skin.vjs-controls-disabled .vjs-big-play-button, .video-js.vjs-sublime-skin.vjs-has-started .vjs-big-play-button, .video-js.vjs-sublime-skin.vjs-using-native-controls .vjs-big-play-button {
+  opacity: 0;
+  pointer-events: none;
+}

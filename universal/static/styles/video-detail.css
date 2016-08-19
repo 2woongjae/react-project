@@ -1,0 +1,461 @@
+.video-detail .title-area {
+  text-align: center;
+}
+.tabs {
+  display: table;
+  width: 100%;
+  border-bottom: 2px solid #121212;
+}
+.tabs li {
+  display: table-cell;
+  text-align: center;
+}
+.tabs li a,
+.tabs li .a {
+  display: block;
+  padding: 8px 10px 10px;
+  font-size: 18px;
+  color: #4F4F4F;
+  border-top: 2px solid #1B1B1B;
+  background-color: #1B1B1B;
+}
+.tabs li a.active {
+  border-top: 2px solid #505050;
+}
+.tabs li a:hover {
+  border-top: 2px solid #333;
+  background-color: #141414;
+}
+.video-detail .tabs {
+  margin: -18px 0 60px;
+}
+.video-detail .tabs li {
+  width: 33%;
+}
+.rating-star {
+  font-size: 24px;
+}
+input.inherit-form-control,
+input.inherit-form-control:focus,
+textarea.inherit-form-control,
+textarea.inherit-form-control:focus,
+select.inherit-form-control {
+  border: 0;
+  font-size: inherit;
+  background-color: transparent;
+}
+select.inherit-form-control option {
+  color: #333;
+}
+.video-detail .title-area input {
+  width: 400px;
+  text-align: center;
+}
+
+/* overview */
+.video-detail .feature-area {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.video-detail .feature-area .trailer,
+.video-detail .feature-area .payment {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+}
+.video-detail .trailer .thumb {
+  position: relative;
+  height: 300px;
+  background: #000 no-repeat 50% 50%;
+  background-size: contain;
+}
+.video-detail .trailer .file-upload-area {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.video-detail .trailer .file-upload {
+  cursor: pointer;
+}
+.video-detail .trailer .file-upload .btn {
+  position: relative;
+  width: 34px;
+  height: 34px;
+}
+.video-detail .trailer .file-upload .fa {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  color: #444;
+  z-index: 2;
+}
+.video-detail .trailer .file-upload label + label {
+  margin-left: 6px;
+}
+.video-detail .trailer .file-upload,
+.video-detail .trailer .file-upload .file-btn-area {
+  position: relative;
+}
+.video-detail .trailer .file-upload .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  text-indent: -99em;
+  border-radius: 4px;
+  z-index: 1;
+}
+.video-detail .trailer .file-upload input {
+  width: 40px;
+  height: 1px;
+  opacity: 0;
+}
+.video-detail .trailer .video-area {
+  height: 100%;
+  text-align: center;
+}
+.video-detail .trailer .video-js {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.video-detail .trailer .vjs-playing video,
+.video-detail .trailer .vjs-has-started.vjs-user-active video {
+  opacity: 1;
+}
+.video-detail .trailer video {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.video-detail .trailer .title {
+  position: relative;
+  height: 60px;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: #E0E0E0;
+  white-space:nowrap;
+  background-color: #101010;
+  overflow:hidden;
+}
+.video-detail .trailer .title:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  background: linear-gradient(to right, rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.8) 50%, #101010 100%);
+}
+.video-detail .trailer .title input {
+  width: 100%;
+}
+.video-detail .feature-area .payment {
+  margin-left: 2%;
+  padding: 50px 10px;
+  color: #fff;
+  text-align: center;
+  background-color: #1FA66B;
+}
+.video-detail .feature-area .payment .icon {
+  display: block;
+  font-size: 70px;
+}
+.video-detail .feature-area .payment .price {
+  font-size: 27px;
+}
+.video-detail .feature-area .payment .price input {
+  width: 70px;
+  text-align: center;
+}
+.video-detail .feature-area .payment .expired {
+  display: block;
+  font-size: 20px;
+  opacity: 0.5;
+}
+.video-detail .feature-area .payment .expired input {
+  width: 40px;
+  text-align: center;
+}
+.video-detail .feature-area .payment input::-webkit-input-placeholder {
+  color: #ddd;
+}
+.video-detail .content-area {
+  font-size: 20px;
+}
+.video-detail .content-area .categories select {
+  width: 200px;
+}
+.video-detail .content-area .categories .btn-modify {
+  margin: -2px 10px 2px 0;
+  color: #666;
+  vertical-align: middle;
+}
+.video-detail .content-area .categories span.btn {
+  cursor: default;
+}
+.video-detail .content-area .sub-category {
+  position: relative;
+  display: inline-block;
+  padding-left: 28px;
+}
+.video-detail .content-area .sub-category:before {
+  content: '>';
+  position: absolute;
+  top: -2px;
+  left: 10px;
+  color: #666;
+}
+.video-detail .content-area .staff {
+  margin: 24px 0;
+}
+.video-detail .content-area .staff .react-tagsinput {
+  min-height: 41px;
+  border: 0;
+  background-color: transparent;
+}
+.video-detail .content-area .staff .react-tagsinput-input {
+  padding: 7px 7px 6px;
+}
+.video-detail .content-area .staff label {
+  display: block;
+}
+.video-detail .content-area .staff label + label {
+  margin-top: 10px;
+}
+.video-detail .box {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.video-detail .box + .box {
+  margin-left: 8px;
+  padding-left: 9px;
+}
+.video-detail .box + .box:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 0;
+  border-left: 1px solid #E0E0E0;
+}
+.video-detail .box i,
+.video-detail .box select {
+  font-weight: normal;
+  vertical-align: middle;
+}
+.video-detail .box i {
+  margin-right: 4px;
+  font-style: normal;
+}
+.video-detail .box label {
+  margin: 0;
+}
+.video-detail .box label input[type=checkbox] {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.video-detail .content-area label {
+  font-size: 20px;
+}
+.video-detail .content-area .story {
+  display: block;
+}
+.video-detail .content-area .story textarea {
+  width: 100%;
+  margin-top: 6px;
+  font-weight: normal;
+  border-radius: 6px;
+}
+.video-detail .content-area .story textarea.white {
+  padding: 10px;
+  color: #444;
+}
+.video-detail .btn-area {
+  margin-top: 20px;
+  text-align: center;
+}
+.reviews {
+  font-size: 20px;
+}
+.reviews .rating-star {
+  display: inline-block;
+  margin-left: 24px;
+  vertical-align: middle;
+}
+.review-write {
+  margin-bottom: 30px;
+}
+.review-write .author {
+  display: inline;
+  width: 230px;
+}
+.review-write label input {
+  font-weight: normal;
+}
+.review-write .textarea {
+  display: block;
+  font-size: 20px;
+}
+.reviews textarea {
+  width: 100%;
+}
+.review-item {
+  position: relative;
+  font-size: 16px;
+}
+.review-item .btn-close {
+  top: auto;
+  bottom: 26px;
+  right: 48px;
+}
+.review-item {
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.review-item .btn-submit {
+  width: 38px;
+  height: 38px;
+  border-radius: 50em;
+}
+
+/* clips */
+.video-detail .clips-area {
+  margin-top: 70px;
+}
+.video-detail .clips-area .trailer {
+  display: inline-block;
+  width: 33%;
+  cursor: auto;
+}
+.video-detail .clips-area .trailer + .trailer {
+  margin-left: 0.4%;
+}
+.video-detail .clips-area .trailer .title {
+  padding-right: 40px;
+  cursor: move;
+}
+
+/* more like this */
+.video-detail .contents {
+  margin-top: 34px;
+}
+.video-detail .contents .title {
+  text-align: left;
+}
+.ui-sortable .ui-sortable-placeholder.visible {
+  opacity: .4;
+  border: 1px #ccc dashed;
+}
+.ui-sortable-item {
+  border: 1px solid transparent;
+}
+.contents .ui-sortable {
+  line-height: 0;
+}
+.contents .ui-sortable-item {
+  position: relative;
+  margin: 0 0 14px 14px;
+}
+.contents .ui-sortable-item .item {
+  margin: 0;
+}
+.video-detail .api-autocomplete {
+  width: 300px;
+  margin-top: 20px;
+}
+
+
+/* Live TV */
+.live-tv-detail.video-detail .feature-area .trailer,
+.music-detail.video-detail .feature-area .trailer,
+.photos-detail.video-detail .feature-area .trailer {
+  display: block;
+  margin: 0 auto;
+}
+.add-vod-autocomplete .api-autocomplete {
+  margin-left: auto;
+  margin-right: auto;
+}
+.api-autocomplete .item-image {
+  margin-right: 8px;
+}
+
+
+/* Music */
+.music-detail .input-md {
+  width: 300px;
+  margin-top: 4px;
+}
+
+
+/* Photo */
+.photos-detail .content-area {
+  text-align: center;
+}
+.photos-detail .item {
+  position: relative;
+  vertical-align: top;
+}
+.photos-detail .add-item {
+  background-color: #141414;
+  color: #4F4F4F;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.photos-detail .add-item .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -30px 0 0 -24px;
+  font-size: 60px;
+  cursor: pointer;
+}
+.photos-detail .add-item .progress {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  border-radius: 16px;
+}
+.photos-detail .add-item .progress.on {
+  display: block;
+}
+.photos-detail .add-item .progress.on.completed {
+  display: none;
+}
+.photos-detail .add-item input {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  opacity: 0;
+}
+.modal {
+  color: #444;
+}
+.add-photo-modal .form-label {
+  display: block;
+  margin: 10px 0 6px;
+}
+.add-photo-modal .progress {
+  height: 20px;
+}
+.add-photo-modal .thumb {
+  float: left;
+  width: 260px;
+  height: 260px;
+  margin: 10px 20px 0 0;
+  border-radius: 6px;
+  background: #ddd no-repeat 0 0;
+  background-size: cover;
+}

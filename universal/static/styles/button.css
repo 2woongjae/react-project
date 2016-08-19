@@ -1,0 +1,12 @@
+.btn.btn-none {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+.btn-close {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  border-radius: 50em;
+}
